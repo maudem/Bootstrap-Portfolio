@@ -1,9 +1,17 @@
-<!DOCTYPE>
+<!DOCTYPE html >
 <html>
 <head>
 
 
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
@@ -14,38 +22,47 @@
 <body>
 
 <!-- header with links to contact, portfolio and Bio pages -->
- 	<header id="header"><!--the whole header-->
- 		<div class="main"><!--space and style the nav bar from the name-->
-			<a id="logo"><!--the blue and white name-->
-				Maude Mensah Simpson</a>
-			<nav>	
- 				<a href="index.html">Who I Am</a>
- 				<a href="portfolio.html">My Work</a>
- 				<a href="contact.html">Reach Me Here</a>
+ 	<!--the whole header-->
+ 		<!-- <div class="main"> --><!--space and style the nav bar from the name-->
+			
+		<nav id="header" class="navbar navbar-default navbar-static-top"> <!-- bootstrap  -->
+  			<div class="main">
+    			<a id="logo">Maude Mensah Simpson</a><!--the blue and white name-->
+
+			<nav>
+				<ul class="nav nav-pills">
+  					<li role="presentation" class="active"><a href="index.html">Who Am I</a></li>
+  					<li role="presentation"><a href="portfolio.html">My Work</a></li>
+ 					 <li role="presentation"><a href="contact.html">Reach Me Here</a></li>
+				</ul>
  			</nav>
- 		</div>		
-	</header>
-	<!--the big container-->
-	<div class="contain" id="main"><!--container for the about me and social together-->
-		<container class="about">
-			<h1>Who I Am</h1><!--watch out for unnecessary div tags--> 
-				<div>
+ 		</div>
+		</nav>
+
+
+
+		<!--the big container-->
+	<!--container for the about me and social together-->
+		<container id="main"  class="container row">
+			<container class="about col-md-6 col-sm-3 col-xs-2">
+				<h1>Who I Am</h1><!--watch out for unnecessary div tags--> 
+				<div> <!-- photo -->
 					<img id="photo" src="assets/images/profile2.jpg" alt="Maude Mensah Simpson">
 				</div>
 				
 				<div>
-					<p>I am a budding web developer that lives in Durham, NC.  I love vivid colors, whimsy and little surprises where you wouldn't expect them.  I have a great time experimenting and exploring. My goal is to bring all of these things to well thought out project for my clients that is not only easy to use, but pleasureable.		
+					<p>I am a budding web developer living in Durham, NC.  I love vivid colors, whimsy and little surprises where you wouldn't expect them.  I have fun experimenting and exploring. My goal is to bring all of these things to well thought out project for my clients that is not only easy to use, but pleasureable.		
 					</p>
 
 					<p>
-					When I'm not staring at a screen (laptop, phone, netflix or otherwise) im downtown getting icecream, at eno park wading the river or enjoy the art scene of my wonderful city.  Preferably with my family and/or friends. 
+					When I'm not staring at a screen (laptop, phone, netflix or otherwise) I'm downtown getting ice cream, at Eno Park wading in the river or enjoy the art scene in my wonderful city.  Preferably with my family and/or friends. 
 					</p>
-				</div>
+				</div>				
 		</container>
 
 
-		<aside class="connect"><!--connect box-->
-			<div id="social" ><!--style the title and the icons-->
+		<aside class="connect row"  ><!--connect box-->
+			<div id="social col-md-2 col-sm-2 col-xs-2"><!--style the title and the icons-->
 				<h1>Social Soup</h1>
 				<!-- target="blank" opens link in a separate page-->
 					<a  href="https://github.com/maudem" target="_blank">
@@ -66,14 +83,12 @@
 					</a>
 				</div>
 			</aside>
-		</div>
+		</container>
 
 	
-
-	<footer id="footer">
-		<div class=contain>
-		&copy; Copywright 2017 Maude Mensah Simpson
-		</div>
-	</footer>
-</title>
-</head>
+	<nav id=footer class="navbar navbar-default navbar-fixed-bottom">
+  		<div class="container">
+  			 &copy; Copywright 2017 Maude Mensah Simpson
+  		</div>
+	</nav>
+</body>

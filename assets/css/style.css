@@ -17,7 +17,7 @@ p:last-child{
 }
 
 h1, h2{
-	font-family: 'Georgia', Times, Times new Roman, serif;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 700;
 	color:#4aaaa5;
 }
@@ -84,14 +84,12 @@ nav a{
 nav a:first-child {
 	border-left: 0 none;
 }
-.contain{
-	
-}
+
 
 #main{
 padding-top: 100px;
-position: relative;
-margin-left: 80px;
+/*position: relative;*/
+margin: 80px;
 
 
 }
@@ -131,12 +129,12 @@ margin-left: 80px;
 .connect, h2{
 	border-bottom: 2px solid #eee;
 }
+
+
 .social{
 	width: 50px;
 	height: 60px;
 	margin: 8px 5px 0px ;
-	
-
 
 }
 
@@ -144,9 +142,9 @@ margin-left: 80px;
 	margin-right:0; 
 }
 
-
-/*individual social icons*/
-
+/*
+individual social icons
+*/
 .link{
 	width: 50px;
 	height:40px;
@@ -166,6 +164,7 @@ float:left;
 margin: 20px 25px;
 
 }
+
 
 .foliopic h2{
 	border-bottom: 0;
@@ -238,5 +237,7 @@ input[type=submit] {
 	color: #ccc;
 	font-size: 12px;
 	text-align: center;
+	margin-top: 20px;
+
 }
 
