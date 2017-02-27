@@ -21,22 +21,24 @@
 
 <body>
 <!-- header with links to contact, portfolio and Bio pages -->
-    <header id="header"><!--the whole header-->
+    <nav id="header" class="navbar navbar-default navbar-static-top"><!--the whole header-->
         <div class="main"><!--space and style the nav bar from the name-->
             <a id="logo"><!--the blue and white name-->
                 Maude Mensah Simpson</a>
+            
             <nav>   
                 <ul class="nav nav-pills">
                     <li role="presentation" class="active"><a href="index.html">Who Am I</a></li>
-                    <li role="presentation"><a href="portfolio.html">My Work</a>
+                    <li role="presentation"><a href="portfolio.html">My Work</a></li>
                      <li role="presentation"><a href="contact.html">Reach Me Here</a></li>
                 </ul>
             </nav>
-        </div>      
-    </header>
+        </div>
+    </nav>      
+    
 
     <!--the About me container-->
-    <div class="contain" id="main"  ><!--container for the about me and social  together-->
+    <container class="container" id="main"  ><!--container for the about me and social  together-->
         <container class="about">
             <h1>Reach Me Here</h1>
 <!--watch out for unnecessary div tags--> 
@@ -44,16 +46,16 @@
                 <form id="contact-form">
                     <ul>
                         <li>
-                            <label for="name">First Name</label>
+                            
                             <input type="text" id="name" name="Name" placeholder="Your name...">
                         </li>
                         <li>
-                            <label for="email">Your Email</label>
+                            
                             <input type="text" name="email" id="email" placeholder="Your email...">
                         </li>
                         <li>
-                            <label for="message">Message </label>
-                            <textarea id="message" name="message"></textarea>
+                            
+                            <textarea id="message" name="message">Message</textarea>
                         </li>
                     </ul>
                     <input type="submit" name="submit"><!--submit button-->
@@ -83,13 +85,16 @@
                     </a>
                 </div>
             </aside>
-        </div>
+        </container>
 
     
-    <footer id="footer">
-        <div class=contain>
+    <nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
             &copy;Copywright 2017 Maude Mensah Simpson
-            
+        
         </div>
-    </footer>
+    </nav>
+</body>
+
+
 
